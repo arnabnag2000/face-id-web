@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Face Identification</title>
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <h3>Face Recognition with Bounding Box</h3>
-  <video id="video" width="320" height="240" autoplay muted></video>
-  <canvas id="overlay" width="320" height="240"></canvas>
-</body>
+  <head>
+    <title>Face Recognition with Bounding Box</title>
+  </head>
+  <body>
+    <h2>Face Recognition with Bounding Box</h2>
+    <div id="video-container"></div>
+    <div id="status">Loading models...</div>
+
+    <!-- ✅ Load face-api.js first -->
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+
+    <!-- ✅ Then load your script -->
+    <script src="script.js"></script>
+  </body>
 </html>
